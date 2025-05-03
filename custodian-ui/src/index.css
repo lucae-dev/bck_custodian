@@ -1,0 +1,10 @@
+/* src/styles.css */
+@import 'xterm/css/xterm.css';
+
+body {
+  margin: 0;
+  background: #000;
+  color: #0f0;
+  font-family: 'Courier New', monospace;
+  overflow: hidden;
+}
