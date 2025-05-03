@@ -9,8 +9,8 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @Component
 public class SimpleRateLimiter {
-    private final int maxRequests = 100;
-    private final Duration window = Duration.ofMinutes(60);
+    private final int maxRequests = 30;
+    private final Duration window = Duration.ofMinutes(30);
     private final ConcurrentHashMap<String, AtomicInteger> counts = new ConcurrentHashMap<>();
     private final ConcurrentHashMap<String, Instant> starts = new ConcurrentHashMap<>();
 
